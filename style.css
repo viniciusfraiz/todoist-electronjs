@@ -1,3 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
 body {
     background: #f8f8f8;
     font-family: 'Poppins', sans-serif;
@@ -13,6 +22,8 @@ hr{
     border: 2px solid #e559f9;
     margin-top: 80px;
     margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .conteudo-atividade {
@@ -22,7 +33,27 @@ hr{
 }
 
 input {
+    width: 300px;
     height: 40px;
     border-radius: 8px;
     border: 1px solid #a8a8b3;
+    padding-left: 16px;
+    margin-top: 22px;
+}
+
+button {
+    width: 300px;
+    height: 40px;
+    background: #835afd;
+    color: #fefefe;
+    border-radius: 8px;
+    border: none;
+    font-family:  "Roboto", sans-serif;
+    font-size: 16px;
+    margin-top: 16px;
+    cursor: pointer;
+}   
+
+button:hover{
+    background: red;
 }
