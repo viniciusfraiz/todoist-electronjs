@@ -22,8 +22,9 @@
         <h2>O que vou fazer hoje? 🤔👇🏼</h2>
         <input 
          type="text"
+         id="input"
           placeholder="Escreva sua atividade"
-          onkeyup="adicionarItem9(event)"/> 
+          onkeypress="adicionarItem(event)"/> 
 
         <!--botao de adicionar item-->
          <button onclick="adicionarItem()"> 
@@ -33,9 +34,6 @@
 
     <!--Lista de Todois-->
     <ul id="Lista-de-tarefas"> 
-        <li>Minha Primeira Tarefa</li>
-        <li>Minha Segunda Tarefa</li>
-        <li>Minha Terceira Tarefa</li>
     </ul>
 
     <!--Importando Script responsavel pela lógica do todo-->

@@ -1,6 +1,11 @@
 function adicionarItem(event) {
-    if(event && event.keyCode !== 13) return; 
-    const valorInput = document.getElementById("").value
+    const tecla = event.key;
+
+    if(tecla !== "Enter") return;
+
+    console.log(tecla)
+
+    const valorInput = document.getElementById("input").value
 
     //CRIANDO A TAG UL DO NOSSO HTML PELO ID
     const minhaTagUL = document.getElementById("Lista-de-tarefas");
