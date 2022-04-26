@@ -64,3 +64,8 @@ ul{
 
 
 }
+
+b {
+    color: red;
+    cursor: pointer;
+}

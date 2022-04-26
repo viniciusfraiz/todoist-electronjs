@@ -1,6 +1,7 @@
 function adicionarItem(event) {
     const tecla = event.key;
 
+ 
     if(tecla !== "Enter") return;
 
     console.log(tecla)
@@ -11,10 +12,13 @@ function adicionarItem(event) {
     const minhaTagUL = document.getElementById("Lista-de-tarefas");
 
     //CRIANDO TAG LI COM JAVASCRIP
-    const criarTagLI = document.createElement("li") ;
+    const criarTagLI = document.createElement("li") ; 
 
-    // ADICIONANDO UM TEXTO PARA NOSSA TagLi CRIADA
-    criarTagLI.innerText = valorInput ; 
+    //Criando uma tag em negrito
+        const tagRemover = "<b onclick='removerItem(event)'>Remover</b>" ; 
+
+    //Adicionando um texto  para nossa tag li criada
+    criarTagLI.innerHTML = valorInput + tagRemover ; 
 
     // ADICIONANDO A TAG Li para Nossa Ul
     minhaTagUL.appendChild(criarTagLI) ;
@@ -22,5 +26,14 @@ function adicionarItem(event) {
 
    console.log("ENTROU NA FUNÇAO ADICIONA ITEM")
 
+
 }
     
+function removerItem(event) {
+    //PEGANDO <B> DENTRO DO NOSSO EVENTO
+    const tagRemover = event.target; 
+
+    console.log("CLIKEI NA FUNÇAO REMOVER") 
+
+    console.log(tagRemover)
+}
