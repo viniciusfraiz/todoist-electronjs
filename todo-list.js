@@ -14,6 +14,9 @@ function adicionarItem(event) {
     //CRIANDO TAG LI COM JAVASCRIP
     const criarTagLI = document.createElement("li") ; 
 
+    //adicionando um evento de clique para a tag <Li>
+    criarTagLI.addEventListener('click', concluirTarefa) ; 
+
     //Criando uma tag em negrito
         const tagRemover = `<i onclick='removerItem(event)' class="fa-solid fa-circle-minus"></i>`; 
 
@@ -23,8 +26,6 @@ function adicionarItem(event) {
     // Adiconando A tag Li para Nossa Ul
     minhaTagUL.appendChild(criarTagLI) ;
     
-
-   console.log("ENTROU NA FUNÇAO ADICIONA ITEM")
 
 }
     
@@ -41,4 +42,13 @@ function removerItem(event) {
     minhaLi.remove()
 
     
+}
+
+function concluirTarefa(event) {
+
+    //Pegando tag <li> dentro no nosso event
+    const minhaTagLi = event.target
+    
+    minhaTagLi.className = "concluida";
+
 }
