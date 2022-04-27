@@ -69,3 +69,9 @@ b {
     color: red;
     cursor: pointer;
 }
+
+.fa-circle-minus {
+    color: red;
+    margin-left: 10px;
+    cursor: pointer;
+}
